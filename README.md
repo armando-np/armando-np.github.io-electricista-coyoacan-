@@ -1,26 +1,38 @@
-# Electricista en Coyoacán y CDMX
+# Armando Nuñez | Electricidad, Domótica y CCTV
 
-Landing page profesional para campañas de Google Ads y captación de clientes por llamada o WhatsApp.
+Landing page para servicios de electricidad, automatización e instalación de cámaras en Coyoacán y distintas zonas de Ciudad de México.
+
+## Servicios destacados
+
+- Diagnóstico y reparación de fallas eléctricas
+- Instalaciones eléctricas residenciales y para negocios
+- Centros de carga, circuitos dedicados y puesta a tierra
+- Adecuaciones para equipos médicos, máquinas de espresso y equipos sensibles
+- Domótica: iluminación, sensores, temporizadores y dispositivos compatibles
+- Instalación de cámaras CCTV e IP
 
 ## Archivos
 
-- `index.html`: contenido principal, SEO y datos estructurados.
-- `assets/styles.css`: diseño responsivo.
-- `assets/script.js`: menú móvil y eventos de clic para futura medición.
-- `assets/favicon.svg`: icono del navegador.
-- `assets/og-image.svg`: imagen para compartir.
-- `robots.txt` y `sitemap.xml`: rastreo e indexación.
-- `site.webmanifest`: metadatos de aplicación web.
+```text
+index.html
+robots.txt
+sitemap.xml
+site.webmanifest
+assets/
+  brand-emblem.webp
+  favicon.svg
+  icon-192.png
+  icon-512.png
+  logo-armando-nunez.webp
+  og-image.webp
+  script.js
+  styles.css
+```
 
-## URL publicada
+## Publicación en GitHub Pages
+
+Sube todos los archivos y la carpeta `assets` a la raíz del repositorio. El archivo `index.html` debe quedar en la raíz, no dentro de otra carpeta.
+
+## URL del sitio
 
 https://armando-np.github.io/armando-np.github.io-electricista-coyoacan-/
-
-## Contacto configurado
-
-- Teléfono: +52 56 3894 4059
-- WhatsApp: 525638944059
-
-## Medición
-
-El JavaScript genera eventos `click_to_call` y `click_whatsapp` en `dataLayer`. Para enviarlos a Google Ads o Google Analytics es necesario añadir Google Tag Manager o la etiqueta de Google y configurar las conversiones.
