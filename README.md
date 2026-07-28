@@ -1,123 +1,39 @@
-# ⚡ Electricista en Coyoacán
+# Electricista en Coyoacán y CDMX
 
-Landing page para un servicio de electricidad residencial en Coyoacán, Ciudad de México.
+Landing page estática para promocionar servicios eléctricos residenciales y comerciales mediante GitHub Pages y Google Ads.
 
-## Servicios
+## Contenido
 
-- Diagnóstico de fallas eléctricas
-- Reparación de cortocircuitos
-- Cambio de contactos y apagadores
-- Instalación de lámparas
-- Revisión de cableado
-- Cambio de centro de carga
-- Instalaciones eléctricas residenciales
-- Mantenimiento preventivo
+- `index.html`: página principal.
+- `index-para-copiar.txt`: el mismo código en formato de texto para copiar y pegar.
+- `assets/favicon.svg`: icono del sitio.
+- `assets/og-image.svg`: imagen para compartir en redes.
+- `robots.txt`: instrucciones básicas para buscadores.
+- `sitemap.xml`: URL principal para indexación.
+- `site.webmanifest`: metadatos para dispositivos móviles.
 
-## Problemas que atendemos
+## Publicar en GitHub Pages
 
-- Se baja la pastilla constantemente
-- No hay luz en una parte de la casa
-- Contactos sin corriente
-- Contactos que hacen chispas
-- Luces que parpadean
-- Olor a quemado en la instalación
-- Cortocircuitos
-- Instalaciones eléctricas antiguas
+1. Sube todos los archivos a la raíz del repositorio.
+2. Abre `Settings > Pages`.
+3. Selecciona `Deploy from a branch`.
+4. Elige `main` y `/(root)`.
+5. Guarda y espera a que GitHub muestre la URL pública.
 
-## Tecnologías
+## Google Ads
 
-- HTML5
-- CSS3
-- GitHub Pages
+Usa como `Final URL` la URL pública exacta de GitHub Pages. No uses directamente `wa.me`, `share.google` o un acortador como destino del anuncio.
 
-## Objetivo
+## Datos configurados
 
-Esta landing page fue desarrollada para proporcionar información sobre servicios eléctricos y servir como página de destino para campañas de Google Ads y búsquedas locales.
+- Teléfono: `+52 56 3894 4059`
+- WhatsApp: `525638944059`
+- URL actual: `https://armando-np.github.io/armando-np.github.io-electricista-coyoacan-/`
 
-## Características
+Si cambias el nombre del repositorio o la URL, actualiza:
 
-- Diseño responsivo
-- Optimizada para dispositivos móviles
-- Botón de llamada directa
-- Botón de WhatsApp
-- SEO básico
-- Carga rápida
-- Preparada para Google Ads
-
-## Zona de servicio
-
-📍 Coyoacán, Ciudad de México
-
-También se atienden zonas cercanas.
-
-## Contacto
-
-📞 Teléfono: # ⚡ Electricista en Coyoacán
-
-Landing page para un servicio de electricidad residencial en Coyoacán, Ciudad de México.
-
-## Servicios
-
-- Diagnóstico de fallas eléctricas
-- Reparación de cortocircuitos
-- Cambio de contactos y apagadores
-- Instalación de lámparas
-- Revisión de cableado
-- Cambio de centro de carga
-- Instalaciones eléctricas residenciales
-- Mantenimiento preventivo
-
-## Problemas que atendemos
-
-- Se baja la pastilla constantemente
-- No hay luz en una parte de la casa
-- Contactos sin corriente
-- Contactos que hacen chispas
-- Luces que parpadean
-- Olor a quemado en la instalación
-- Cortocircuitos
-- Instalaciones eléctricas antiguas
-
-## Tecnologías
-
-- HTML5
-- CSS3
-- GitHub Pages
-
-## Objetivo
-
-Esta landing page fue desarrollada para proporcionar información sobre servicios eléctricos y servir como página de destino para campañas de Google Ads y búsquedas locales.
-
-## Características
-
-- Diseño responsivo
-- Optimizada para dispositivos móviles
-- Botón de llamada directa
-- Botón de WhatsApp
-- SEO básico
-- Carga rápida
-- Preparada para Google Ads
-
-## Zona de servicio
-
-📍 Coyoacán, Ciudad de México
-
-También se atienden zonas cercanas.
-
-## Contacto
-
-📞 Teléfono: 5638944059
-
-💬 WhatsApp:
-https://wa.me/525638944059
-
-## Licencia
-
-Uso personal.
-
-💬 WhatsApp:
-https://wa.me/525638944059
-
-## Licencia
-
-Uso personal.
+- `link rel="canonical"` en `index.html`.
+- `og:url` y `og:image`.
+- El campo `url` de los datos estructurados.
+- `sitemap.xml`.
+- `robots.txt`.
