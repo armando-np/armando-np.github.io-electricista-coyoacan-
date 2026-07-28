@@ -12,10 +12,6 @@ Landing page profesional para campañas de Google Ads y captación de clientes p
 - `robots.txt` y `sitemap.xml`: rastreo e indexación.
 - `site.webmanifest`: metadatos de aplicación web.
 
-## Publicación en GitHub Pages
-
-Sube todos los archivos, manteniendo la carpeta `assets`, a la raíz del repositorio. En Settings > Pages selecciona `Deploy from a branch`, rama `main`, carpeta `/root`.
-
 ## URL publicada
 
 https://armando-np.github.io/armando-np.github.io-electricista-coyoacan-/
