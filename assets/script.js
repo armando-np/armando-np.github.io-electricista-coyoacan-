@@ -15,15 +15,36 @@ if (menuButton && nav) {
   });
 }
 
-function pushLeadEvent(eventName) {
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({ event: eventName });
+/**
+ * Envía un evento a Google Analytics 4 mediante gtag.js.
+ */
+function sendContactEvent(eventName, contactMethod, link) {
+  if (typeof window.gtag !== 'function') {
+    console.warn(`Google tag no disponible para el evento: ${eventName}`);
+    return;
+  }
+
+  window.gtag('event', eventName, {
+    event_category: 'contact',
+    contact_method: contactMethod,
+    link_url: link.href
+  });
 }
 
+/**
+ * Clics en enlaces telefónicos.
+ */
 document.querySelectorAll('.track-call').forEach((link) => {
-  link.addEventListener('click', () => pushLeadEvent('click_to_call'));
+  link.addEventListener('click', () => {
+    sendContactEvent('click_to_call', 'phone', link);
+  });
 });
 
+/**
+ * Clics en enlaces de WhatsApp.
+ */
 document.querySelectorAll('.track-whatsapp').forEach((link) => {
-  link.addEventListener('click', () => pushLeadEvent('click_whatsapp'));
+  link.addEventListener('click', () => {
+    sendContactEvent('click_whatsapp', 'whatsapp', link);
+  });
 });
