@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  >
+
+  <title>Electricista en Coyoacán | Servicio Eléctrico a Domicilio</title>
+
+  <meta
+    name="description"
+    content="Electricista a domicilio en Coyoacán. Diagnóstico y reparación de fallas eléctricas, cortocircuitos, contactos, apagadores, lámparas y centros de carga."
+  >
+
+  <meta
+    name="keywords"
+    content="electricista en Coyoacán, electricista a domicilio, reparación eléctrica, fallas eléctricas, cortocircuito, centro de carga, contactos eléctricos"
+  >
+
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#fbbf24">
+
+  <!-- Reemplaza esta URL con la dirección real de tu página -->
+  <link
+    rel="canonical"
+    href="https://armando-np.github.io/electricista-coyoacan/"
+  >
+
+  <style>
+    :root {
+      --background: #0f172a;
+      --surface: #1e293b;
+      --surface-light: #334155;
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --primary: #fbbf24;
+      --primary-dark: #f59e0b;
+      --success: #22c55e;
+      --border: rgba(255, 255, 255, 0.12);
+      --shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--background);
+      color: var(--text);
+      font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .container {
+      width: min(1100px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      background: #020617;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.95rem;
+    }
+
+    .topbar-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 44px;
+      text-align: center;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 80px 0 70px;
+      background:
+        radial-gradient(
+          circle at top right,
+          rgba(251, 191, 36, 0.18),
+          transparent 38%
+        ),
+        linear-gradient(135deg, #0f172a, #1e293b);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      align-items: center;
+      gap: 48px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 18px;
+      padding: 8px 14px;
+      border: 1px solid rgba(251, 191, 36, 0.35);
+      border-radius: 999px;
+      background: rgba(251, 191, 36, 0.1);
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    h1 {
+      max-width: 760px;
+      font-size: clamp(2.35rem, 7vw, 4.5rem);
+      line-height: 1.05;
+      letter-spacing: -0.045em;
+    }
+
+    h1 span {
+      color: var(--primary);
+    }
+
+    .hero-description {
+      max-width: 700px;
+      margin-top: 22px;
+      color: var(--muted);
+      font-size: 1.15rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 52px;
+      padding: 13px 22px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      font-weight: 800;
+      transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button-primary {
+      background: var(--primary);
+      color: #111827;
+    }
+
+    .button-primary:hover {
+      background: var(--primary-dark);
+    }
+
+    .button-secondary {
+      border-color: var(--border);
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--text);
+    }
+
+    .button-whatsapp {
+      background: var(--success);
+      color: #052e16;
+    }
+
+    .hero-card {
+      padding: 28px;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      background: rgba(30, 41, 59, 0.88);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(12px);
+    }
+
+    .hero-card h2 {
+      margin-bottom: 18px;
+      color: var(--primary);
+      font-size: 1.35rem;
+    }
+
+    .problem-list {
+      display: grid;
+      gap: 14px;
+      list-style: none;
+    }
+
+    .problem-list li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      color: var(--muted);
+    }
+
+    .problem-list strong {
+      color: var(--text);
+    }
+
+    .check {
+      flex: 0 0 auto;
+      display: grid;
+      place-items: center;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background: rgba(34, 197, 94, 0.14);
+      color: #4ade80;
+      font-weight: 900;
+    }
+
+    section {
+      padding: 72px 0;
+    }
+
+    .section-heading {
+      max-width: 720px;
+      margin-bottom: 32px;
+    }
+
+    .section-label {
+      color: var(--primary);
+      font-size: 0.9rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .section-heading h2 {
+      margin-top: 8px;
+      font-size: clamp(1.9rem, 5vw, 3rem);
+      line-height: 1.15;
+    }
+
+    .section-heading p {
+      margin-top: 12px;
+      color: var(--muted);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: var(--surface);
+      transition:
+        transform 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(251, 191, 36, 0.45);
+    }
+
+    .card-icon {
+      margin-bottom: 15px;
+      font-size: 2rem;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 1.15rem;
+    }
+
+    .card p {
+      color: var(--muted);
+    }
+
+    .problems {
+      background: #111827;
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .problem-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.035);
+    }
+
+    .problem-item h3 {
+      margin-bottom: 4px;
+      font-size: 1.05rem;
+    }
+
+    .problem-item p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .step {
+      position: relative;
+      padding: 25px;
+      border-left: 3px solid var(--primary);
+      background: var(--surface);
+      border-radius: 0 14px 14px 0;
+    }
+
+    .step-number {
+      margin-bottom: 10px;
+      color: var(--primary);
+      font-weight: 900;
+    }
+
+    .step p {
+      margin-top: 8px;
+      color: var(--muted);
+    }
+
+    .service-area {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .area-box {
+      padding: 28px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: var(--surface);
+    }
+
+    .area-box ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-top: 18px;
+      list-style: none;
+      color: var(--muted);
+    }
+
+    .area-box li::before {
+      content: "•";
+      margin-right: 8px;
+      color: var(--primary);
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact-box {
+      padding: 42px 24px;
+      border: 1px solid rgba(251, 191, 36, 0.28);
+      border-radius: 22px;
+      background:
+        linear-gradient(
+          135deg,
+          rgba(251, 191, 36, 0.13),
+          rgba(30, 41, 59, 0.9)
+        );
+      box-shadow: var(--shadow);
+    }
+
+    .contact-box h2 {
+      font-size: clamp(1.9rem, 5vw, 3rem);
+      line-height: 1.15;
+    }
+
+    .contact-box p {
+      max-width: 650px;
+      margin: 15px auto 0;
+      color: var(--muted);
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+      margin-top: 26px;
+    }
+
+    .notice {
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    footer {
+      padding: 28px 0 90px;
+      border-top: 1px solid var(--border);
+      color: #94a3b8;
+      text-align: center;
+    }
+
+    .floating-actions {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 20;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .floating-button {
+      display: grid;
+      place-items: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      box-shadow: var(--shadow);
+      font-size: 1.45rem;
+      font-weight: 900;
+    }
+
+    .floating-call {
+      background: var(--primary);
+      color: #111827;
+    }
+
+    .floating-whatsapp {
+      background: var(--success);
+      color: #052e16;
+    }
+
+    @media (max-width: 850px) {
+      .hero {
+        padding-top: 55px;
+      }
+
+      .hero-grid,
+      .service-area {
+        grid-template-columns: 1fr;
+      }
+
+      .cards,
+      .process-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .container {
+        width: min(100% - 24px, 1100px);
+      }
+
+      section {
+        padding: 55px 0;
+      }
+
+      .cards,
+      .process-grid,
+      .problem-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-actions,
+      .contact-actions {
+        flex-direction: column;
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      .area-box ul {
+        grid-template-columns: 1fr;
+      }
+
+      .floating-actions {
+        right: 12px;
+        bottom: 12px;
+      }
+
+      .floating-button {
+        width: 52px;
+        height: 52px;
+      }
+    }
+  </style>
+
+  <!-- Datos estructurados para Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Electrician",
+    "name": "Armando Nuñez - Electricista en Coyoacán",
+    "description": "Servicio eléctrico a domicilio en Coyoacán para diagnóstico, reparación e instalación eléctrica.",
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Coyoacán, Ciudad de México"
+    },
+    "telephone": "+52-56-38944059",
+    "url": "https://armando-np.github.io/electricista-coyoacan/",
+    "priceRange": "$$"
+  }
+  </script>
+</head>
+
+<body>
+
+  <div class="topbar">
+    <div class="container topbar-content">
+      Servicio eléctrico a domicilio en Coyoacán y zonas cercanas
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="container hero-grid">
+
+      <div>
+        <div class="eyebrow">
+          ⚡ Atención en Coyoacán
+        </div>
+
+        <h1>
+          Electricista a domicilio en
+          <span>Coyoacán</span>
+        </h1>
+
+        <p class="hero-description">
+          Diagnóstico y solución de fallas eléctricas en casas y pequeños
+          negocios. Atención para cortocircuitos, pastillas que se bajan,
+          contactos sin corriente, lámparas, apagadores y centros de carga.
+        </p>
+
+        <div class="hero-actions">
+
+          <!-- Reemplaza el número en ambos enlaces -->
+          <a
+            class="button button-primary"
+            href="tel:+525638944059"
+            aria-label="Llamar al electricista"
+          >
+            📞 Llamar ahora
+          </a>
+
+          <!-- Número sin espacios ni signos -->
+          <a
+            class="button button-whatsapp"
+            href="https://wa.me/525638944059?text=Hola%2C%20necesito%20una%20cotizaci%C3%B3n%20de%20servicio%20el%C3%A9ctrico%20en%20Coyoac%C3%A1n."
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Solicitar cotización por WhatsApp"
+          >
+            💬 Enviar WhatsApp
+          </a>
+
+          <a
+            class="button button-secondary"
+            href="#servicios"
+          >
+            Ver servicios
+          </a>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <h2>¿Tienes alguno de estos problemas?</h2>
+
+        <ul class="problem-list">
+          <li>
+            <span class="check">✓</span>
+            <span><strong>Se baja la pastilla</strong> constantemente.</span>
+          </li>
+
+          <li>
+            <span class="check">✓</span>
+            <span><strong>No tienes luz</strong> en una parte de la casa.</span>
+          </li>
+
+          <li>
+            <span class="check">✓</span>
+            <span><strong>Un contacto hace chispas</strong> o no funciona.</span>
+          </li>
+
+          <li>
+            <span class="check">✓</span>
+            <span><strong>Las luces parpadean</strong> o bajan de intensidad.</span>
+          </li>
+
+          <li>
+            <span class="check">✓</span>
+            <span><strong>Hay olor a quemado</strong> cerca del cableado.</span>
+          </li>
+        </ul>
+      </aside>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section id="servicios">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="section-label">Servicios eléctricos</span>
+          <h2>Reparación, diagnóstico e instalación</h2>
+          <p>
+            Atención para problemas eléctricos residenciales y trabajos
+            programados en Coyoacán.
+          </p>
+        </div>
+
+        <div class="cards">
+
+          <article class="card">
+            <div class="card-icon">⚡</div>
+            <h3>Fallas eléctricas</h3>
+            <p>
+              Revisión de apagones parciales, falsos contactos,
+              cortocircuitos y problemas de alimentación.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">🔌</div>
+            <h3>Contactos y apagadores</h3>
+            <p>
+              Cambio, reparación e instalación de contactos, apagadores,
+              placas y conexiones dañadas.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">💡</div>
+            <h3>Lámparas y luminarias</h3>
+            <p>
+              Instalación y sustitución de lámparas, focos, luminarias
+              y otros puntos de iluminación.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">🧰</div>
+            <h3>Centro de carga</h3>
+            <p>
+              Revisión y cambio de interruptores termomagnéticos,
+              pastillas y centros de carga.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">🏠</div>
+            <h3>Revisión de cableado</h3>
+            <p>
+              Inspección de cableado antiguo, conexiones defectuosas
+              y posibles sobrecargas.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">🛠️</div>
+            <h3>Instalaciones nuevas</h3>
+            <p>
+              Instalación de nuevos contactos, circuitos, apagadores
+              y puntos de iluminación.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="problems">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="section-label">Solución de problemas</span>
+          <h2>Señales de que necesitas una revisión eléctrica</h2>
+        </div>
+
+        <div class="problem-grid">
+
+          <article class="problem-item">
+            <span class="check">!</span>
+            <div>
+              <h3>La pastilla se baja</h3>
+              <p>
+                Puede existir una sobrecarga, cortocircuito o problema
+                en algún aparato o circuito.
+              </p>
+            </div>
+          </article>
+
+          <article class="problem-item">
+            <span class="check">!</span>
+            <div>
+              <h3>Contactos calientes</h3>
+              <p>
+                Un contacto caliente, flojo o con olor a quemado requiere
+                atención y debe dejar de utilizarse.
+              </p>
+            </div>
+          </article>
+
+          <article class="problem-item">
+            <span class="check">!</span>
+            <div>
+              <h3>Luces que parpadean</h3>
+              <p>
+                Puede tratarse de una conexión floja, una luminaria dañada
+                o una anomalía en el circuito.
+              </p>
+            </div>
+          </article>
+
+          <article class="problem-item">
+            <span class="check">!</span>
+            <div>
+              <h3>Una zona se quedó sin luz</h3>
+              <p>
+                Se revisan interruptores, conexiones, contactos y cableado
+                para localizar el origen de la falla.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="section-label">Proceso de atención</span>
+          <h2>Cómo solicitar el servicio</h2>
+        </div>
+
+        <div class="process-grid">
+
+          <article class="step">
+            <div class="step-number">PASO 1</div>
+            <h3>Describe el problema</h3>
+            <p>
+              Envía un mensaje o realiza una llamada indicando qué sucede
+              y en qué zona de Coyoacán te encuentras.
+            </p>
+          </article>
+
+          <article class="step">
+            <div class="step-number">PASO 2</div>
+            <h3>Revisión del servicio</h3>
+            <p>
+              Se revisa la instalación para identificar la causa antes
+              de realizar cambios o reparaciones.
+            </p>
+          </article>
+
+          <article class="step">
+            <div class="step-number">PASO 3</div>
+            <h3>Propuesta de solución</h3>
+            <p>
+              Se explica el trabajo requerido, los materiales y el costo
+              antes de continuar.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="problems">
+      <div class="container service-area">
+
+        <div>
+          <div class="section-heading">
+            <span class="section-label">Zona de servicio</span>
+            <h2>Atención en Coyoacán y alrededores</h2>
+            <p>
+              Confirma disponibilidad proporcionando tu colonia y una
+              descripción breve del problema.
+            </p>
+          </div>
+        </div>
+
+        <div class="area-box">
+          <h3>Algunas zonas atendidas</h3>
+
+          <ul>
+            <li>Del Carmen</li>
+            <li>Santa Úrsula</li>
+            <li>Copilco</li>
+            <li>Santo Domingo</li>
+            <li>Ajusco</li>
+            <li>Los Reyes</li>
+            <li>Pedregal</li>
+            <li>Villa Coyoacán</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div class="container">
+
+        <div class="contact-box">
+          <h2>Solicita una revisión eléctrica</h2>
+
+          <p>
+            Indica tu colonia, el problema que estás presentando y,
+            cuando sea posible, envía una fotografía del contacto,
+            centro de carga o instalación.
+          </p>
+
+          <div class="contact-actions">
+
+            <a
+              class="button button-primary"
+              href="tel:+525638944059"
+            >
+              📞 Llamar
+            </a>
+
+            <a
+              class="button button-whatsapp"
+              href="https://wa.me/525638944059?text=Hola%2C%20necesito%20una%20cotizaci%C3%B3n%20de%20servicio%20el%C3%A9ctrico%20en%20Coyoac%C3%A1n."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              💬 Cotizar por WhatsApp
+            </a>
+
+          </div>
+
+          <p class="notice">
+            Si hay humo, fuego, chispas constantes o cables expuestos,
+            corta la energía únicamente si puedes hacerlo con seguridad
+            y evita tocar la instalación.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 Armando Nuñez · Servicio eléctrico en Coyoacán
+    </div>
+  </footer>
+
+  <div class="floating-actions">
+
+    <a
+      class="floating-button floating-call"
+      href="tel:+525638944059"
+      aria-label="Llamar"
+      title="Llamar"
+    >
+      📞
+    </a>
+
+    <a
+      class="floating-button floating-whatsapp"
+      href="https://wa.me/525638944059?text=Hola%2C%20necesito%20una%20cotizaci%C3%B3n%20de%20servicio%20el%C3%A9ctrico%20en%20Coyoac%C3%A1n."
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Enviar mensaje por WhatsApp"
+      title="WhatsApp"
+    >
+      💬
+    </a>
+
+  </div>
+
+</body>
+</html>
