@@ -16,7 +16,7 @@ if (menuButton && nav) {
 }
 
 /**
- * Envía un evento a Google Analytics 4 mediante gtag.js.
+ * Envía un evento a Google Analytics 4 y una conversión a Google Ads.
  */
 function sendContactEvent(eventName, contactMethod, link) {
   if (typeof window.gtag !== 'function') {
@@ -24,10 +24,18 @@ function sendContactEvent(eventName, contactMethod, link) {
     return;
   }
 
+  // Evento para Google Analytics 4
   window.gtag('event', eventName, {
     event_category: 'contact',
     contact_method: contactMethod,
     link_url: link.href
+  });
+
+  // Conversión para Google Ads
+  window.gtag('event', 'conversion', {
+    send_to: 'AW-804083603/nE_8CIbAjNgcEJOvtf8C',
+    value: 1.0,
+    currency: 'MXN'
   });
 }
 
