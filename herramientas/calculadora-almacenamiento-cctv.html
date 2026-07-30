@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <!-- Google tag (gtag.js): Google Analytics 4 + Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HE82QC0JTR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    // Google Analytics 4
+    gtag('config', 'G-HE82QC0JTR');
+
+    // Google Ads
+    gtag('config', 'AW-804083603');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Calculadora de almacenamiento para cámaras CCTV e IP</title>
+  <meta name="description" content="Calcula cuántos TB necesita un DVR o NVR según cámaras, resolución, compresión, bitrate, días y grabación continua o por movimiento.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="theme-color" content="#07101f">
+  <meta name="format-detection" content="telephone=yes">
+  <link rel="canonical" href="https://armando-np.github.io/armando-np.github.io-electricista-coyoacan-/herramientas/calculadora-almacenamiento-cctv.html">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/icon-192.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="stylesheet" href="../assets/styles.css">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="Armando Nuñez | Electricidad, Domótica y CCTV">
+  <meta property="og:title" content="Calculadora de almacenamiento para cámaras CCTV e IP">
+  <meta property="og:description" content="Calcula cuántos TB necesita un DVR o NVR según cámaras, resolución, compresión, bitrate, días y grabación continua o por movimiento.">
+  <meta property="og:url" content="https://armando-np.github.io/armando-np.github.io-electricista-coyoacan-/herramientas/calculadora-almacenamiento-cctv.html">
+  <meta property="og:image" content="https://armando-np.github.io/armando-np.github.io-electricista-coyoacan-/assets/og-image.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Armando Nuñez: electricidad, domótica y cámaras de vigilancia">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Electrician",
+  "@id": "https://armando-np.github.io/armando-np.github.io-electricista-coyoacan-/#negocio",
+  "name": "Armando Nuñez | Electricidad, Domótica y CCTV",
+  "url": "https://armando-np.github.io/armando-np.github.io-electricista-coyoacan-/",
+  "logo": "https://armando-np.github.io/armando-np.github.io-electricista-coyoacan-/assets/logo-armando-nunez.webp",
+  "image": "https://armando-np.github.io/armando-np.github.io-electricista-coyoacan-/assets/og-image.webp",
+  "telephone": "+52 56 3894 4059",
+  "description": "Diagnóstico, reparación e instalación eléctrica, domótica e instalación de cámaras de seguridad para casas y negocios en Coyoacán y otras zonas de Ciudad de México.",
+  "areaServed": [
+    "Coyoacán",
+    "Del Valle",
+    "Narvarte",
+    "Nápoles",
+    "Roma Norte",
+    "Roma Sur",
+    "Condesa",
+    "Polanco",
+    "Anzures",
+    "Juárez",
+    "Escandón",
+    "San Ángel",
+    "Mixcoac",
+    "Copilco",
+    "Pedregal",
+    "Tlalpan"
+  ],
+  "serviceType": [
+    "Diagnóstico de fallas eléctricas",
+    "Reparación de cortocircuitos",
+    "Instalaciones eléctricas",
+    "Centros de carga",
+    "Tierras físicas y aisladas",
+    "Circuitos para equipos sensibles",
+    "Domótica y automatización",
+    "Instalación de cámaras de seguridad CCTV e IP"
+  ],
+  "priceRange": "$$"
+}
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "@id": "https://armando-np.github.io/armando-np.github.io-electricista-coyoacan-/herramientas/calculadora-almacenamiento-cctv.html#herramienta",
+  "name": "Calculadora de almacenamiento para cámaras CCTV e IP",
+  "url": "https://armando-np.github.io/armando-np.github.io-electricista-coyoacan-/herramientas/calculadora-almacenamiento-cctv.html",
+  "description": "Calcula cuántos TB necesita un DVR o NVR según cámaras, resolución, compresión, bitrate, días y grabación continua o por movimiento.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "JavaScript",
+  "inLanguage": "es-MX",
+  "isAccessibleForFree": true,
+  "provider": {
+    "@id": "https://armando-np.github.io/armando-np.github.io-electricista-coyoacan-/#negocio"
+  }
+}
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://armando-np.github.io/armando-np.github.io-electricista-coyoacan-/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Herramientas",
+      "item": "https://armando-np.github.io/armando-np.github.io-electricista-coyoacan-/herramientas/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Almacenamiento CCTV"
+    }
+  ]
+}
+</script>
+</head><body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="utility-bar">
+    <div class="container utility-content">
+      <span>Electricidad, domótica y cámaras en Coyoacán y zonas de CDMX</span>
+      <a class="track-call" href="tel:+525638944059">56 3894 4059</a>
+    </div>
+  </div>
+  <header class="site-header" id="inicio">
+    <div class="container nav-wrap">
+      <a class="brand" href="../" aria-label="Ir a la página principal">
+        <img src="../assets/brand-emblem.webp" width="72" height="51" alt="" aria-hidden="true">
+        <span>
+          <strong>Armando Nuñez</strong>
+          <small>Electricidad · Domótica · CCTV</small>
+        </span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span class="menu-icon" aria-hidden="true"></span>
+        <span>Menú</span>
+      </button>
+      <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+        <a href="../servicios/electricista-coyoacan.html">Servicios</a>
+        <a href="../herramientas/" aria-current="page">Herramientas</a>
+        <a href="../guias/">Guías</a>
+        <a href="../#zonas">Cobertura</a>
+        <a class="nav-cta" href="../#cotizar">Cotizar</a>
+      </nav>
+    </div>
+  </header><nav class="breadcrumbs container" aria-label="Migas de pan">
+      <ol><li><a href="../">Inicio</a></li><li><a href="./">Herramientas</a></li><li aria-current="page">Almacenamiento CCTV</li></ol>
+    </nav>
+  <main id="contenido">
+    <section class="content-hero">
+      <div class="container">
+        <div>
+          <p class="section-label">Calculadora de videovigilancia</p>
+          <h1>¿Cuánto disco duro necesitan mis cámaras?</h1>
+          <p>Estima la capacidad de almacenamiento para un DVR o NVR según número de cámaras, bitrate, días de retención y modo de grabación.</p>
+        </div>
+        <div class="hero-badge"><strong>Resultado en TB</strong><span>CCTV, IP, DVR y NVR</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container tool-shell">
+        <form id="cctv-calculator" class="tool-panel" novalidate>
+          <h2>Datos del sistema</h2>
+          <p>El bitrate real del modelo de cámara es el dato más importante. Puedes usar la sugerencia y luego sustituirla por la ficha técnica.</p>
+
+          <div class="tool-section">
+            <div class="inline-inputs three">
+              <div class="field">
+                <label for="cctv-cameras">Número de cámaras</label>
+                <input id="cctv-cameras" type="number" min="1" max="128" step="1" value="4" inputmode="numeric" required>
+              </div>
+              <div class="field">
+                <label for="cctv-days">Días de grabación</label>
+                <input id="cctv-days" type="number" min="1" max="365" step="1" value="15" inputmode="numeric" required>
+              </div>
+              <div class="field">
+                <label for="cctv-resolution">Resolución</label>
+                <select id="cctv-resolution">
+                  <option value="1080p">1080p / 2 MP</option>
+                  <option value="4mp">4 MP</option>
+                  <option value="5mp">5 MP</option>
+                  <option value="4k">4K / 8 MP</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="tool-section">
+            <div class="inline-inputs three">
+              <div class="field">
+                <label for="cctv-codec">Compresión</label>
+                <select id="cctv-codec">
+                  <option value="h265">H.265</option>
+                  <option value="h265plus">H.265+ / inteligente</option>
+                  <option value="h264">H.264</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="cctv-fps">Cuadros por segundo</label>
+                <select id="cctv-fps">
+                  <option value="10">10 fps</option>
+                  <option value="15" selected>15 fps</option>
+                  <option value="20">20 fps</option>
+                  <option value="25">25 fps</option>
+                  <option value="30">30 fps</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="cctv-bitrate">Bitrate por cámara</label>
+                <input id="cctv-bitrate" type="number" min="0.1" max="100" step="0.1" inputmode="decimal">
+                <small>Mbps. La herramienta sugiere un valor editable.</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="tool-section">
+            <div class="inline-inputs three">
+              <div class="field">
+                <label for="cctv-recording">Modo de grabación</label>
+                <select id="cctv-recording">
+                  <option value="continuous">Continua, 24 horas</option>
+                  <option value="motion">Por movimiento</option>
+                </select>
+              </div>
+              <div id="cctv-activity-field" class="field hidden">
+                <label for="cctv-activity">Actividad estimada</label>
+                <input id="cctv-activity" type="number" min="1" max="100" step="1" value="30" inputmode="numeric">
+                <small>Porcentaje del día con grabación.</small>
+              </div>
+              <div class="field">
+                <label for="cctv-margin">Margen de seguridad</label>
+                <input id="cctv-margin" type="number" min="0" max="100" step="1" value="20" inputmode="numeric">
+                <small>Para variaciones de escena y bitrate.</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button class="button button-primary" type="submit">Calcular almacenamiento</button>
+            <button class="button button-ghost" type="reset">Restablecer</button>
+          </div>
+          <p id="cctv-status" class="status-message" role="status" aria-live="polite"></p>
+          <noscript><p class="notice warning">Esta calculadora requiere JavaScript habilitado.</p></noscript>
+        </form>
+
+        <aside class="result-panel" aria-live="polite">
+          <div class="result-header"><h2>Capacidad estimada</h2></div>
+          <div class="result-body">
+            <div id="cctv-result">
+              <p class="result-empty">Completa los datos para estimar terabytes y una capacidad comercial mínima.</p>
+            </div>
+            <div class="result-actions">
+              <a id="cctv-whatsapp" class="button button-whatsapp track-whatsapp" href="https://wa.me/525638944059" target="_blank" rel="noopener noreferrer">Cotizar sistema por WhatsApp</a>
+              <button class="button button-ghost" type="button" data-copy-text="#cctv-result-text">Copiar resultado</button>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container content-layout">
+        <article class="content-card">
+          <p class="lead-answer"><strong>Regla principal:</strong> el espacio depende del bitrate total y del tiempo. Más cámaras, mayor resolución, más cuadros por segundo o H.264 producen archivos más grandes.</p>
+
+          <h2>Qué puede cambiar el resultado</h2>
+          <ul>
+            <li>Escenas con movimiento constante, lluvia, árboles, tráfico o ruido de imagen.</li>
+            <li>Bitrate variable, calidad configurada y funciones inteligentes del fabricante.</li>
+            <li>Grabación de audio, metadatos, eventos y cámaras con resoluciones diferentes.</li>
+            <li>Espacio reservado por el grabador y capacidad real utilizable del disco.</li>
+            <li>Redundancia, RAID o grabación simultánea en más de un dispositivo.</li>
+          </ul>
+
+          <h2>Grabación continua contra movimiento</h2>
+          <p>La grabación continua facilita revisar cualquier momento, pero requiere más almacenamiento. La grabación por movimiento puede reducir espacio, aunque su efectividad depende de la detección, sensibilidad, zona, iluminación y actividad del lugar.</p>
+
+          <h2>No compres el disco sin revisar el grabador</h2>
+          <p>Confirma la capacidad máxima admitida por bahía, número de discos, compatibilidad, tipo de interfaz y si el fabricante exige unidades diseñadas para videovigilancia. También revisa el ancho de banda de entrada del NVR y la resolución máxima por canal.</p>
+
+          <h2>Planeación básica de un sistema</h2>
+          <ol>
+            <li>Define qué áreas deben verse y qué detalle necesitas identificar.</li>
+            <li>Selecciona resolución, lente, iluminación y protección exterior.</li>
+            <li>Comprueba alimentación, PoE, red y canalización.</li>
+            <li>Calcula almacenamiento y días de retención.</li>
+            <li>Verifica acceso remoto, contraseñas, actualizaciones y respaldo eléctrico.</li>
+          </ol>
+
+          <p>Consulta la página de <a href="../servicios/instalacion-camaras-coyoacan.html">instalación de cámaras en Coyoacán</a> para revisar cobertura, cableado, grabador y almacenamiento como un sistema completo.</p>
+          <div class="notice warning"><strong>Privacidad y uso responsable:</strong> coloca cámaras respetando áreas privadas, reglas del inmueble y obligaciones aplicables. Evita captar espacios que no formen parte del objetivo de seguridad.</div>
+        </article>
+        
+      <aside class="sidebar" aria-label="Recursos relacionados">
+        <div class="sidebar-card">
+          <h2>¿Necesitas revisión?</h2>
+          <p>Envía colonia, síntoma y fotografías cuando sea seguro tomarlas.</p>
+          <a class="button button-whatsapp track-whatsapp" href="https://wa.me/525638944059?text=Hola%2C%20necesito%20una%20revisi%C3%B3n%20el%C3%A9ctrica.%20Mi%20colonia%20es%3A%20" target="_blank" rel="noopener noreferrer">Enviar WhatsApp</a>
+        </div>
+        <div class="sidebar-card">
+          <h2>Herramientas</h2>
+          <ul>
+            <li><a href="../herramientas/calculadora-consumo-electrico.html">Watts, amperes y kWh</a></li>
+            <li><a href="../herramientas/calculadora-calibre-cable.html">Calibre y caída de tensión</a></li>
+            <li><a href="../herramientas/calculadora-almacenamiento-cctv.html">Almacenamiento CCTV</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h2>Más guías</h2>
+          <ul>
+            <li><a href="../guias/por-que-se-baja-la-pastilla.html">Pastilla que se baja</a></li>
+            <li><a href="../guias/contacto-caliente.html">Contacto caliente</a></li>
+            <li><a href="../guias/luces-parpadean.html">Luces que parpadean</a></li>
+            <li><a href="../guias/circuito-dedicado.html">Circuito dedicado</a></li>
+          </ul>
+        </div>
+      </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <img src="../assets/brand-emblem.webp" width="96" height="68" alt="" aria-hidden="true" loading="lazy">
+        <div>
+          <strong>Armando Nuñez</strong>
+          <p>Electricidad · Domótica · Cámaras</p>
+          <p class="footer-small">Servicio en Coyoacán y distintas zonas de Ciudad de México, sujeto a disponibilidad.</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h2>Servicios</h2>
+          <a href="../servicios/electricista-coyoacan.html">Electricista en Coyoacán</a>
+          <a href="../servicios/instalacion-camaras-coyoacan.html">Instalación de cámaras</a>
+          <a href="../servicios/domotica-coyoacan.html">Domótica</a>
+        </div>
+        <div>
+          <h2>Recursos</h2>
+          <a href="../herramientas/">Calculadoras eléctricas</a>
+          <a href="../guias/">Guías de diagnóstico</a>
+          <a href="../guias/por-que-se-baja-la-pastilla.html">Pastilla que se baja</a>
+        </div>
+        <div>
+          <h2>Contacto</h2>
+          <a class="track-call" href="tel:+525638944059">56 3894 4059</a>
+          <a class="track-whatsapp" href="https://wa.me/525638944059" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a href="../#zonas">Zonas de servicio</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Armando Nuñez · Ciudad de México</span>
+      <span>Información orientativa; una instalación eléctrica debe revisarse en sitio.</span>
+    </div>
+  </footer>
+  <div class="floating-actions" aria-label="Contacto rápido">
+    <a class="floating-button floating-call track-call" href="tel:+525638944059" aria-label="Llamar a Armando Nuñez">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.5 3 3.8 5.4 6.8 6.8l2.3-2.3c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3.4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.2 1.1l-2.2 2.5z"/></svg>
+    </a>
+    <a class="floating-button floating-whatsapp track-whatsapp" href="https://wa.me/525638944059" target="_blank" rel="noopener noreferrer" aria-label="Enviar WhatsApp a Armando Nuñez">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L.2 24l6.5-1.7c1.7.9 3.6 1.4 5.5 1.4 6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4zm-8.3 18.2c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-3.9 1 1-3.8-.2-.4a9.8 9.8 0 1 1 8.6 4.8zm5.4-7.3c-.3-.1-1.7-.8-2-1-.3-.1-.5-.1-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-1.8-.9-3-1.6-4.2-3.7-.3-.6.3-.5.9-1.8.1-.2 0-.4 0-.6l-.9-2.1c-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.1.2 2.4 3.7 5.9 5.2.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4z"/></svg>
+    </a>
+  </div>
+  <script src="../assets/script.js" defer></script>
+  <script src="../assets/tools.js" defer></script>
+</body>
+</html>

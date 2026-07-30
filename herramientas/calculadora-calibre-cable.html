@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <!-- Google tag (gtag.js): Google Analytics 4 + Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HE82QC0JTR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    // Google Analytics 4
+    gtag('config', 'G-HE82QC0JTR');
+
+    // Google Ads
+    gtag('config', 'AW-804083603');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>¿Qué calibre de cable necesito? Calculadora AWG</title>
+  <meta name="description" content="Estimador preliminar de calibre AWG y caída de tensión según amperes, potencia, distancia, cobre o aluminio, 127/220 V y sistema monofásico o trifásico.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="theme-color" content="#07101f">
+  <meta name="format-detection" content="telephone=yes">
+  <link rel="canonical" href="https://armando-np.github.io/armando-np.github.io-electricista-coyoacan-/herramientas/calculadora-calibre-cable.html">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/icon-192.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="stylesheet" href="../assets/styles.css">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="Armando Nuñez | Electricidad, Domótica y CCTV">
+  <meta property="og:title" content="¿Qué calibre de cable necesito? Calculadora AWG">
+  <meta property="og:description" content="Estimador preliminar de calibre AWG y caída de tensión según amperes, potencia, distancia, cobre o aluminio, 127/220 V y sistema monofásico o trifásico.">
+  <meta property="og:url" content="https://armando-np.github.io/armando-np.github.io-electricista-coyoacan-/herramientas/calculadora-calibre-cable.html">
+  <meta property="og:image" content="https://armando-np.github.io/armando-np.github.io-electricista-coyoacan-/assets/og-image.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Armando Nuñez: electricidad, domótica y cámaras de vigilancia">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Electrician",
+  "@id": "https://armando-np.github.io/armando-np.github.io-electricista-coyoacan-/#negocio",
+  "name": "Armando Nuñez | Electricidad, Domótica y CCTV",
+  "url": "https://armando-np.github.io/armando-np.github.io-electricista-coyoacan-/",
+  "logo": "https://armando-np.github.io/armando-np.github.io-electricista-coyoacan-/assets/logo-armando-nunez.webp",
+  "image": "https://armando-np.github.io/armando-np.github.io-electricista-coyoacan-/assets/og-image.webp",
+  "telephone": "+52 56 3894 4059",
+  "description": "Diagnóstico, reparación e instalación eléctrica, domótica e instalación de cámaras de seguridad para casas y negocios en Coyoacán y otras zonas de Ciudad de México.",
+  "areaServed": [
+    "Coyoacán",
+    "Del Valle",
+    "Narvarte",
+    "Nápoles",
+    "Roma Norte",
+    "Roma Sur",
+    "Condesa",
+    "Polanco",
+    "Anzures",
+    "Juárez",
+    "Escandón",
+    "San Ángel",
+    "Mixcoac",
+    "Copilco",
+    "Pedregal",
+    "Tlalpan"
+  ],
+  "serviceType": [
+    "Diagnóstico de fallas eléctricas",
+    "Reparación de cortocircuitos",
+    "Instalaciones eléctricas",
+    "Centros de carga",
+    "Tierras físicas y aisladas",
+    "Circuitos para equipos sensibles",
+    "Domótica y automatización",
+    "Instalación de cámaras de seguridad CCTV e IP"
+  ],
+  "priceRange": "$$"
+}
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "@id": "https://armando-np.github.io/armando-np.github.io-electricista-coyoacan-/herramientas/calculadora-calibre-cable.html#herramienta",
+  "name": "Estimador de calibre de cable y caída de tensión",
+  "url": "https://armando-np.github.io/armando-np.github.io-electricista-coyoacan-/herramientas/calculadora-calibre-cable.html",
+  "description": "Estimador preliminar de calibre AWG y caída de tensión según amperes, potencia, distancia, cobre o aluminio, 127/220 V y sistema monofásico o trifásico.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "JavaScript",
+  "inLanguage": "es-MX",
+  "isAccessibleForFree": true,
+  "provider": {
+    "@id": "https://armando-np.github.io/armando-np.github.io-electricista-coyoacan-/#negocio"
+  }
+}
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://armando-np.github.io/armando-np.github.io-electricista-coyoacan-/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Herramientas",
+      "item": "https://armando-np.github.io/armando-np.github.io-electricista-coyoacan-/herramientas/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Calibre de cable"
+    }
+  ]
+}
+</script>
+</head><body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="utility-bar">
+    <div class="container utility-content">
+      <span>Electricidad, domótica y cámaras en Coyoacán y zonas de CDMX</span>
+      <a class="track-call" href="tel:+525638944059">56 3894 4059</a>
+    </div>
+  </div>
+  <header class="site-header" id="inicio">
+    <div class="container nav-wrap">
+      <a class="brand" href="../" aria-label="Ir a la página principal">
+        <img src="../assets/brand-emblem.webp" width="72" height="51" alt="" aria-hidden="true">
+        <span>
+          <strong>Armando Nuñez</strong>
+          <small>Electricidad · Domótica · CCTV</small>
+        </span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span class="menu-icon" aria-hidden="true"></span>
+        <span>Menú</span>
+      </button>
+      <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+        <a href="../servicios/electricista-coyoacan.html">Servicios</a>
+        <a href="../herramientas/" aria-current="page">Herramientas</a>
+        <a href="../guias/">Guías</a>
+        <a href="../#zonas">Cobertura</a>
+        <a class="nav-cta" href="../#cotizar">Cotizar</a>
+      </nav>
+    </div>
+  </header><nav class="breadcrumbs container" aria-label="Migas de pan">
+      <ol><li><a href="../">Inicio</a></li><li><a href="./">Herramientas</a></li><li aria-current="page">Calibre de cable</li></ol>
+    </nav>
+  <main id="contenido">
+    <section class="content-hero">
+      <div class="container">
+        <div>
+          <p class="section-label">Estimador eléctrico</p>
+          <h1>¿Qué calibre de cable necesito?</h1>
+          <p>Obtén una referencia preliminar por corriente y caída de tensión. La selección final exige revisar la instalación, el aislamiento, las terminales y la protección.</p>
+        </div>
+        <div class="hero-badge"><strong>AWG y kcmil</strong><span>Cobre o aluminio · 1 fase o 3 fases</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container tool-shell">
+        <form id="wire-calculator" class="tool-panel" novalidate>
+          <h2>Datos del circuito</h2>
+          <p>La distancia es de un solo trayecto, desde la alimentación hasta la carga.</p>
+
+          <div class="tool-section">
+            <h3>¿Qué dato conoces?</h3>
+            <div class="segmented">
+              <label><input type="radio" name="wire-mode" value="current" checked><span>Corriente en A</span></label>
+              <label><input type="radio" name="wire-mode" value="power"><span>Potencia en kW</span></label>
+            </div>
+          </div>
+
+          <div class="tool-section">
+            <div id="wire-current-fields" class="inline-inputs">
+              <div class="field">
+                <label for="wire-current">Corriente de carga</label>
+                <input id="wire-current" type="number" min="0.1" step="0.1" inputmode="decimal" placeholder="20">
+                <small>Usa la corriente de placa cuando exista.</small>
+              </div>
+              <div class="field">
+                <label for="wire-voltage">Voltaje</label>
+                <select id="wire-voltage">
+                  <option value="127">127 V</option>
+                  <option value="220">220 V</option>
+                  <option value="120">120 V</option>
+                  <option value="240">240 V</option>
+                  <option value="480">480 V</option>
+                </select>
+              </div>
+            </div>
+
+            <div id="wire-power-fields" class="inline-inputs three hidden">
+              <div class="field">
+                <label for="wire-power">Potencia</label>
+                <input id="wire-power" type="number" min="0.01" step="0.01" inputmode="decimal" placeholder="3.5">
+                <small>Potencia activa en kW.</small>
+              </div>
+              <div class="field">
+                <label for="wire-pf">Factor de potencia</label>
+                <input id="wire-pf" type="number" min="0.1" max="1" step="0.01" value="0.90" inputmode="decimal">
+              </div>
+              <div class="field">
+                <label for="wire-voltage-power">Voltaje</label>
+                <select id="wire-voltage-power" aria-label="Voltaje para modo potencia" onchange="document.getElementById('wire-voltage').value=this.value">
+                  <option value="127">127 V</option>
+                  <option value="220">220 V</option>
+                  <option value="120">120 V</option>
+                  <option value="240">240 V</option>
+                  <option value="480">480 V</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="tool-section">
+            <div class="inline-inputs three">
+              <div class="field">
+                <label for="wire-phase">Sistema</label>
+                <select id="wire-phase">
+                  <option value="single">Monofásico / 2 conductores</option>
+                  <option value="three">Trifásico</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="wire-material">Conductor</label>
+                <select id="wire-material">
+                  <option value="copper">Cobre</option>
+                  <option value="aluminum">Aluminio</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="wire-distance">Distancia de ida</label>
+                <input id="wire-distance" type="number" min="0.1" step="0.1" inputmode="decimal" placeholder="25" required>
+                <small>Metros, sin duplicar.</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="tool-section">
+            <div class="inline-inputs">
+              <div class="field">
+                <label for="wire-drop">Caída máxima objetivo</label>
+                <input id="wire-drop" type="number" min="0.5" max="10" step="0.1" value="3" inputmode="decimal">
+                <small>Porcentaje de diseño; 3 % es un objetivo frecuente para el circuito.</small>
+              </div>
+              <div class="field">
+                <label>Condición de carga</label>
+                <label class="check-control"><input id="wire-continuous" type="checkbox"> Carga continua durante 3 horas o más</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="tool-section">
+            <h3>Condiciones que requieren corrección adicional</h3>
+            <div class="checkbox-row">
+              <label class="check-control"><input type="checkbox" name="wire-condition" value="más de 3 conductores con corriente"> Más de 3 conductores con corriente en la misma canalización</label>
+              <label class="check-control"><input type="checkbox" name="wire-condition" value="temperatura elevada"> Temperatura ambiente elevada</label>
+              <label class="check-control"><input type="checkbox" name="wire-condition" value="lugar húmedo o exterior"> Lugar húmedo, exterior o enterrado</label>
+              <label class="check-control"><input type="checkbox" name="wire-condition" value="motor o corriente de arranque"> Motor, bomba, compresor o corriente de arranque</label>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button class="button button-primary" type="submit">Estimar calibre</button>
+            <button class="button button-ghost" type="reset">Limpiar</button>
+          </div>
+          <p id="wire-status" class="status-message" role="status" aria-live="polite"></p>
+          <noscript><p class="notice warning">Esta calculadora requiere JavaScript habilitado.</p></noscript>
+        </form>
+
+        <aside class="result-panel" aria-live="polite">
+          <div class="result-header"><h2>Resultado preliminar</h2></div>
+          <div class="result-body">
+            <div id="wire-result">
+              <p class="result-empty">Completa la corriente o potencia, distancia y condiciones para obtener una referencia.</p>
+            </div>
+            <div class="result-actions">
+              <a id="wire-whatsapp" class="button button-whatsapp track-whatsapp" href="https://wa.me/525638944059" target="_blank" rel="noopener noreferrer">Verificar por WhatsApp</a>
+              <button class="button button-ghost" type="button" data-copy-text="#wire-result-text">Copiar resultado</button>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container content-layout">
+        <article class="content-card">
+          <p class="lead-answer"><strong>Respuesta responsable:</strong> los amperes por sí solos no determinan el cable. También influyen distancia, material, temperatura, aislamiento, canalización, agrupamiento, terminales, carga continua y protección.</p>
+
+          <h2>Qué calcula esta herramienta</h2>
+          <p>El estimador compara una tabla conservadora de corriente con una aproximación de caída de tensión. Selecciona el primer tamaño que cumple ambos criterios dentro del rango disponible.</p>
+          <ul>
+            <li>En monofásico usa el recorrido de ida y regreso para la caída.</li>
+            <li>En trifásico usa el factor correspondiente a un sistema equilibrado.</li>
+            <li>Si marcas carga continua, incrementa la corriente de diseño para la estimación.</li>
+            <li>No selecciona la pastilla ni verifica capacidad interruptiva, cortocircuito o puesta a tierra.</li>
+          </ul>
+
+          <h2>Por qué la distancia puede aumentar el calibre</h2>
+          <p>Un conductor puede soportar la corriente y aun así producir una caída de tensión excesiva cuando el recorrido es largo. En 127 V, una misma caída en volts representa un porcentaje mayor que en 220 V, por lo que los circuitos largos suelen ser más sensibles.</p>
+
+          <h2>No aumentes la pastilla para evitar disparos</h2>
+          <p>Cuando una protección se dispara, la causa puede ser sobrecarga, corto, fuga, conexión floja o un aparato defectuoso. Cambiarla por otra de mayor capacidad sin comprobar el conductor puede elevar el riesgo de calentamiento. Consulta la guía <a href="../guias/por-que-se-baja-la-pastilla.html">por qué se baja la pastilla</a>.</p>
+
+          <h2>Información necesaria para una selección final</h2>
+          <ul>
+            <li>Corriente nominal y de arranque del equipo.</li>
+            <li>Tipo de aislamiento y temperatura de terminales.</li>
+            <li>Número de conductores portadores de corriente en la canalización.</li>
+            <li>Temperatura ambiente, humedad y método de instalación.</li>
+            <li>Longitud, caída total permitida y coordinación con la protección.</li>
+            <li>Conductor de puesta a tierra y condiciones del sistema.</li>
+          </ul>
+
+          <div class="notice warning"><strong>Referencia normativa:</strong> la instalación final debe revisarse conforme a la normativa aplicable en México. Consulta la <a href="https://www.dof.gob.mx/nota_detalle.php?codigo=5280607&fecha=29/11/2012" target="_blank" rel="noopener noreferrer">NOM-001-SEDE-2012 publicada en el Diario Oficial de la Federación</a> y las especificaciones vigentes del equipo y suministro.</div>
+        </article>
+        
+      <aside class="sidebar" aria-label="Recursos relacionados">
+        <div class="sidebar-card">
+          <h2>¿Necesitas revisión?</h2>
+          <p>Envía colonia, síntoma y fotografías cuando sea seguro tomarlas.</p>
+          <a class="button button-whatsapp track-whatsapp" href="https://wa.me/525638944059?text=Hola%2C%20necesito%20una%20revisi%C3%B3n%20el%C3%A9ctrica.%20Mi%20colonia%20es%3A%20" target="_blank" rel="noopener noreferrer">Enviar WhatsApp</a>
+        </div>
+        <div class="sidebar-card">
+          <h2>Herramientas</h2>
+          <ul>
+            <li><a href="../herramientas/calculadora-consumo-electrico.html">Watts, amperes y kWh</a></li>
+            <li><a href="../herramientas/calculadora-calibre-cable.html">Calibre y caída de tensión</a></li>
+            <li><a href="../herramientas/calculadora-almacenamiento-cctv.html">Almacenamiento CCTV</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h2>Más guías</h2>
+          <ul>
+            <li><a href="../guias/por-que-se-baja-la-pastilla.html">Pastilla que se baja</a></li>
+            <li><a href="../guias/contacto-caliente.html">Contacto caliente</a></li>
+            <li><a href="../guias/luces-parpadean.html">Luces que parpadean</a></li>
+            <li><a href="../guias/circuito-dedicado.html">Circuito dedicado</a></li>
+          </ul>
+        </div>
+      </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <img src="../assets/brand-emblem.webp" width="96" height="68" alt="" aria-hidden="true" loading="lazy">
+        <div>
+          <strong>Armando Nuñez</strong>
+          <p>Electricidad · Domótica · Cámaras</p>
+          <p class="footer-small">Servicio en Coyoacán y distintas zonas de Ciudad de México, sujeto a disponibilidad.</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h2>Servicios</h2>
+          <a href="../servicios/electricista-coyoacan.html">Electricista en Coyoacán</a>
+          <a href="../servicios/instalacion-camaras-coyoacan.html">Instalación de cámaras</a>
+          <a href="../servicios/domotica-coyoacan.html">Domótica</a>
+        </div>
+        <div>
+          <h2>Recursos</h2>
+          <a href="../herramientas/">Calculadoras eléctricas</a>
+          <a href="../guias/">Guías de diagnóstico</a>
+          <a href="../guias/por-que-se-baja-la-pastilla.html">Pastilla que se baja</a>
+        </div>
+        <div>
+          <h2>Contacto</h2>
+          <a class="track-call" href="tel:+525638944059">56 3894 4059</a>
+          <a class="track-whatsapp" href="https://wa.me/525638944059" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a href="../#zonas">Zonas de servicio</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Armando Nuñez · Ciudad de México</span>
+      <span>Información orientativa; una instalación eléctrica debe revisarse en sitio.</span>
+    </div>
+  </footer>
+  <div class="floating-actions" aria-label="Contacto rápido">
+    <a class="floating-button floating-call track-call" href="tel:+525638944059" aria-label="Llamar a Armando Nuñez">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.5 3 3.8 5.4 6.8 6.8l2.3-2.3c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3.4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.2 1.1l-2.2 2.5z"/></svg>
+    </a>
+    <a class="floating-button floating-whatsapp track-whatsapp" href="https://wa.me/525638944059" target="_blank" rel="noopener noreferrer" aria-label="Enviar WhatsApp a Armando Nuñez">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L.2 24l6.5-1.7c1.7.9 3.6 1.4 5.5 1.4 6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4zm-8.3 18.2c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-3.9 1 1-3.8-.2-.4a9.8 9.8 0 1 1 8.6 4.8zm5.4-7.3c-.3-.1-1.7-.8-2-1-.3-.1-.5-.1-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-1.8-.9-3-1.6-4.2-3.7-.3-.6.3-.5.9-1.8.1-.2 0-.4 0-.6l-.9-2.1c-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.1.2 2.4 3.7 5.9 5.2.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4z"/></svg>
+    </a>
+  </div>
+  <script src="../assets/script.js" defer></script>
+  <script src="../assets/tools.js" defer></script>
+  <script>document.addEventListener("DOMContentLoaded",()=>{const a=document.getElementById("wire-voltage"),b=document.getElementById("wire-voltage-power");if(a&&b){a.addEventListener("change",()=>b.value=a.value);b.addEventListener("change",()=>a.value=b.value);}});</script>
+</body>
+</html>
